@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+     <div class="container">
+            <h1>Gallery</h1>
+
+  
+    <div class="gallery">
+      <div class="nature">
+      <img src="image/forest1.jpg" alt="Image 1"    onclick="openModal(0)">
+      <h3>forest image</h3></div>
+
+      <div class="nature">
+      <img src="image/image2.jpg" alt="Image 2"   onclick="openModal(1)">
+      <h3>forest image2</h3>  </div>
+
+      <div class="nature">
+      <img src="image/image3.jpg" alt="Image 3"   onclick="openModal(2)">
+      <h3>forest image3</h3>  </div>
+
+      <div class="nature">
+      <img src="image/image5.avif" alt="Image 4"   onclick="openModal(3)">
+      <h3>forest image4</h3>  </div>
+
+      <div class="nature">
+      <img src="image/image6.avif" alt="Image 5"   onclick="openModal(4)">
+      <h3>forest image5</h3>  </div>
+
+      <div class="nature">
+      <img src="image/image7.avif" alt="Image 6"   onclick="openModal(5)">
+      <h3>forest image6</h3>  </div>
+
+      <div class="nature">
+      <img src="image/images4.jpeg" alt="Image 7"  onclick="openModal(6)">
+      <h3>forest image7</h3>  </div>
+   
+    </div>
+
+  </div>
+  <div id="modal" class="modal">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <img id="modal-img" class="modal-image" src="" alt="">
+    <div class="caption" id="modal-caption"></div>
+    <button class="nav prev" onclick="navigate(-1)">&#10094;</button>
+    <button class="nav next" onclick="navigate(1)">&#10095;</button>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
